@@ -1,5 +1,8 @@
 taskflop
 ========
+[![Build Status](http://img.shields.io/travis/bdero/taskflop.svg?style=flat)](https://travis-ci.org/bdero/taskflop)
+[![Coverage Status](https://img.shields.io/coveralls/bdero/taskflop.svg?style=flat)](https://coveralls.io/r/bdero/taskflop)
+
 A simple way to flop shared task lists between friends: taskflop.com
 
 
