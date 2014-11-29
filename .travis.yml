@@ -1,4 +1,5 @@
 language: python
+
 python:
   - 2.7
 
@@ -11,3 +12,12 @@ script:
 
 after_success:
   coveralls
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: MWYEq56maaPgYG9Jblm7YD/cEQWPcYZR50yt7ZQtPNms5rQ8/EG5/7owqppnsYcCbJ9AXRgB49EcPu2fZplruqIms8W6tU7M3rY2Hbs/NCeQ0wQ1Efl7HqjYu2rCAtkzITS3m2+DUUah18lPom0L92tjaTIuXGqss3aK7RDZ530=
+  app: taskflop
+  on:
+    repo: bdero/taskflop
+    branch: release
