@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 """
 
 from .dev import *
+import dj_database_url
 
 
 DEBUG = False
@@ -19,3 +20,5 @@ ALLOWED_HOSTS = [
     'www.taskflop.com',
     'taskflop.herokuapp.com',
 ]
+
+DATABASES['default'] = dj_database_url.config()
