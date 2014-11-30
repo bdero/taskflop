@@ -4,14 +4,21 @@ from django.conf.urls.static import static
 
 from django.contrib import admin
 
+from django.views.generic import TemplateView
+
 
 urlpatterns = patterns(
     '',
-    # Examples:
-    # url(r'^$', 'taskflop.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
 
+    # Django administration
     url(r'^admin/', include(admin.site.urls)),
+
+    # Placeholder page to display until the app is ready for public use
+    url(
+        r'^$',
+        TemplateView.as_view(template_name='placeholder.html'),
+        name='placeholder'
+    ),
 )
 
 if settings.DEBUG:
