@@ -1,9 +1,27 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Taskflop</title>
+    <script type="text/javascript" src="{% static "lib/jquery.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "lib/semantic_ui/semantic.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "lib/lining.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "lib/lining.effect.min.js" %}"></script>
+
+    <link rel="stylesheet" href="{% static "lib/semantic_ui/semantic.min.css" %}" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{% static "placeholder.css" %}" type="text/css" media="screen" />
   </head>
-  <body>
-    Coming soon.
+  <body class="ui one column centered grid">
+    <section id="content">
+      <header class="ui inverted header">
+        <h1 data-lining data-effect="rolling" class="taskflop">
+          <span class="task"><span class="highlight">t</span>ask</span><span class="highlight">f</span>lop
+        </h1>
+        <h3 data-lining data-effect="slideIn">Coming eventually.</h3>
+      </header>
+    </section>
+
+    <a href="https://github.com/bdero/taskflop"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
   </body>
 </html>
