@@ -1,7 +1,9 @@
 taskflop
 ========
 [![Build Status](http://img.shields.io/travis/bdero/taskflop.svg?style=flat)](https://travis-ci.org/bdero/taskflop)
-[![Coverage Status](https://img.shields.io/coveralls/bdero/taskflop.svg?style=flat)](https://coveralls.io/r/bdero/taskflop)
+[![Quality](http://img.shields.io/codacy/9d26f606600c4e96af3d40f572d6b053.svg?style=flat)](https://www.codacy.com/public/btd/taskflop)
+[![Coverage](https://img.shields.io/coveralls/bdero/taskflop.svg?style=flat)](https://coveralls.io/r/bdero/taskflop)
+[![Requirements](https://img.shields.io/requires/github/celery/celery.svg?style=flat)](https://requires.io/github/bdero/taskflop/requirements/?branch=master)
 [![License](http://img.shields.io/badge/license-GNU_AGPL-red.svg?style=flat)](https://gnu.org/licenses/agpl.html)
 
 A simple way to flop shared task lists between friends: taskflop.com
